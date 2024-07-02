@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head prefix="og:http://ogp.me/ns#">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <html lang="ja">
+    <meta charset="utf-8">
+    <!--OGPはじまり-->
+    <meta property="og:title" content="Eaquord - 地震速報Discord Bot">
+    <meta property="og:description" content="地震速報・地震情報・津波情報お知らせDiscord Bot">
+    <meta property="og:url" content="https://eaquord.daichimarukana.com">
+    <meta property="og:image" content="https://eaquord.daichimarukana.com/img/eewbot_icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eaquord - 地震速報Discord Bot">
+    <!--OGPここまで-->
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Eaquord - 地震速報Discord Bot | Eaquord</title>
+</head>
+<body>
+<header>
+    <a href="#"><h1>Eaquord</h1></a>
+</header>
+<main>
+    <div class="top">
+        <img src="/img/top_sample1.png" class="image1">
+        <img src="/img/top_sample2.png" class="image2">
+        <img src="/img/top_sample3.png" class="image3">
+        <img src="/img/top_sample4.png" class="image4">
+        <img src="/img/top_sample5.png" class="image5">
+        <div class="textbox">
+            <h1>Eaquord</h1>
+            <p>地震速報・地震情報・津波情報お知らせDiscord Bot</p>  
+        </div>
+    </div>
+    <div class="docs">
+        <h1>Eaquordってなに...？</h1>
+        <p>Eaquordは、Discord上に地震速報・地震情報・津波情報をお知らせするBotです。<br>
+            どなたでも簡単にご利用いただく事が可能です！<br>
+            震度分布図などの画像はありませんが、すばやく地震情報などをお知らせいたします。</p>
+
+        <h1>使い方</h1>
+        <p>使い方はとても簡単！<br>
+            以下の3STEPを行うだけ！</p>
+        <h2>1. Botの導入</h2>
+        <p>このページの最下部から、Botの導入リンクへ移動してBotをお使いのサーバーに導入してください。</p>
+        <h2>2. 地震情報を送信するチャンネルの設定</h2>
+        <p>地震情報を受信したいチャンネルで<span>/eaq_register</span>コマンドを実行します！</p>
+        <h2>3. 通知する最低震度の設定</h2>
+        <p>地震情報を受診する設定をしたチャンネルで<span>/eaq_setmin_shindo</span>コマンドを実行します！<br>
+            オプションでshindoという入力欄がでてくるので、そこにそのチャンネルに通知する最低震度を整数で1~7の数字で入力して設定してください。<br>
+            この設定をしないと、震度1から7まですべての地震をお知らせします！<br>
+            <br>
+            これで設定は完了！<br>
+            地震が起き次第地震情報をお知らせいたします。</p>
+        
+        <h1>受信した情報のみかた</h1>
+        <p>🛑<b>注意！</b><br>
+            配信される情報には誤った内容が含まれていたり、正確性に欠ける情報がある場合があります！決してこのBotからの情報を信用せず、あくまでも、目安程度に御覧ください。<br>
+            <br>
+            それでは、以下の画像を見てください！<br>
+            まず、受信できる情報には、いくつかの種類があります！</p>
+        <p>大まかに分けて3つ！<br>
+            - 地震情報<br>
+            - 緊急地震速報<br>
+            - 津波情報<br>
+            <br>
+            地震情報では、右上の小さな画像に最大震度が表示され、本文にマグニチュードと震源地、最大震度と深さが表示されます！<br>
+            また、地震情報には、それぞれ震度階級ごとに色がつけられていて、それぞれの色は以下のものになっています。<br>
+        </p>
+        <div class="flexbox">
+            <img class="mini" src="/img/shindo/sindo1.png">
+            <img class="mini" src="/img/shindo/sindo2.png">
+            <img class="mini" src="/img/shindo/sindo3.png">
+            <img class="mini" src="/img/shindo/sindo4.png">
+            <img class="mini" src="/img/shindo/sindo5j.png">
+            <img class="mini" src="/img/shindo/sindo5k.png">
+            <img class="mini" src="/img/shindo/sindo6j.png">
+            <img class="mini" src="/img/shindo/sindo6k.png">
+            <img class="mini" src="/img/shindo/sindo7.png">
+        </div>
+        <p>
+            続いて、緊急地震速報の表示についてです。<br>
+            緊急地震速報の表示では、本文に震源地とマグニチュードが表示されます。<br>
+            震度に関しては、地震情報でお知らせする仕組みになっています。<br>
+            右上には、「緊急地震速報」と画像で表示されます。
+        </p>
+        <div class="flexbox">
+            <img class="mini" src="/img/shindo/kinkyu.png">
+        </div>
+        <p>
+            最後は津波情報です。<br>
+            津波情報の表示では、右上に「津波」と表示されており、本文に各地方の津波到達状況と高さが表示されます。<br>
+            津波情報が解除された際には、解除された旨の情報も配信いたします。
+        </p>
+        <div class="flexbox">
+            <img class="mini" src="/img/shindo/tsunami.png">
+            <img class="mini" src="/img/shindo/kaijo.png">
+        </div>
+        <div class="flexbox">
+            <img src="/img/top_sample2.png">
+            <img src="/img/top_sample3.png">
+            <img src="/img/tsunami_sample.png">
+        </div>
+
+        <h1>コマンド一覧</h1>
+        <p>- <span>/eaq_register</span>: 地震速報・地震情報・津波情報を受信するチャンネルを設定できます。<br>
+            - <span>/eaq_unregister</span>: 地震速報・地震情報・津波情報を受信するチャンネルの設定を解除できます。<br>
+            - <span>/eaq_eaq_setmin_shindo</span>: 地震速報・地震情報・津波情報を受信するチャンネルで受信する最低震度を設定できます。<br>
+            - <span>/eaq_eaq_about</span>: Eaquordについての情報を表示されます。<br>
+            - <span>/eaq_help</span>: コマンド一覧を表示します。<br>
+            <br>
+            ※<span>/eaq_register</span>、<span>/eaq_unregister</span>、<span>/eaq_eaq_setmin_shindo</span>を実行するにはチャンネル管理権限が必要です！
+        </p>
+
+        <h1>データの取得元は？</h1>
+        <p>データの取得元は、P2P地震情報API v2というものを使用しています。<br>
+            APIから取得できる情報のうち、地震情報、緊急地震速報、津波情報をこのBotで配信しております。<br>
+            データの発表元は配信した情報の最下部に、「情報元 ○○○ - P2P地震情報API v2」といった形式で記載しております！<br>
+            <br>
+            P2P地震情報については、以下のサイトからご確認いただけます！<br>
+            <a href="https://www.p2pquake.net/" target="_blank">P2P地震情報</a>
+        </p>
+
+        <h1>注意事項</h1>
+            <p>注意事項です。<br>
+                別記、<a href="terms.html">利用規約</a>と<a href="privacy.html">プライバシーポリシー</a>がありますので、そちらも必ずご確認ください。<br>
+            </p>
+            <h2>0. まえがき</h2>
+            <p>
+                このBotは個人によって運営されているものになります。<br>
+                Botの特性上、地震情報や地震速報、津波情報には限界がございます。<br>
+                地震情報内で一部の情報が欠けていたり、配信が遅くなってしまうこと、Botが動作しないことや誤報などが発生する可能性もございますので、十分ご理解いただいた上でご利用ください。<br>
+                いかなる場合もこのBotの制作・運営をしているだいちまるは一切責任を負いませんのでご了承ください。
+            </p>
+            <h2>1. 情報の正確性及び取得元について</h2>
+            <p>このBotは、P2P地震情報API v2によって配信されている内容を二次利用して配信するものになっております。<br>
+                あくまでも二次利用した上での配信となりますので、100%正確な内容を即座にお届けできるとは限らないことをご留意ください。
+            </p>
+            <h2>2. Botの停止及びサービス終了について</h2>
+            <p>
+                このBotは以下の場合に停止・終了することがございます。<br>
+                利用者の皆様には事前に通知することなく停止・終了することがございます、ご了承ください。<br>
+                - サーバーシステムのメンテナンス・修理などを実施する場合<br>
+                - 火災・停電等の事故、天災、戦争、暴動、法律等の不可抗力により提供ができなくなった場合<br>
+                - BotやDiscordに障害が発生した場合、送信先サーバーが多すぎる場合<br>
+                - なにかしらの緊急事態が発生した場合<br>
+                - その他、Botの提供が不可能だと判断した場合<br>
+                - 諸事情によりサービスを終了しなければならないと判断された場合<br>
+                このBotによって利用者の皆様および第三者がいかなる損害を負われましても、だいちまるは一切の責任を負いません。
+            </p>
+            <h2>3. お問い合わせ</h2>
+            <p>このBotに関してのお問い合わせはDiscordにありますサポートサーバーや、私のホームページにあります連絡先情報よりお問い合わせください。</p>
+            <h2>4. この規約の変更</h2>
+            <p>この注意事項は予告なく変更される場合があります。<br>
+                ご了承ください。</p>
+
+        <h1>Botの導入！</h1>
+        <p>Botの導入はここから行えます！</p>
+
+        <div class="dlw">
+            <p>Eaquord</p>
+            <div class="dlbutton">
+                <a href="https://discord.com/oauth2/authorize?client_id=1131226311218696272">Add to Discord</a>
+            </div>
+            <div class="dlbutton">
+                <a href="https://discord.gg/xBam5rdSQ9">Support server</a>
+            </div>
+        </div>
+    </div>
+    
+    <a href="https://daichimarukana.com" class="foo">©2022 - 2024 daichimarukana</a>
+</main>
+</body>
