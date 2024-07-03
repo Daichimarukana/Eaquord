@@ -239,52 +239,68 @@ hr {
 
 @media screen and (max-width: 1080px) {
     main{
-        width: 95%;
+        width: 100%;
     }
     header{
-        top: 64px;
+        top: 32px;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 90dvw;
         border-radius: 50px;
     }
     h1{
         margin-left: 32px;
         font-size:64px;
     }
-    
-    main .top-zone{
+    main .top{
         width: 100%;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        margin-left: auto;
-        margin-right: auto;
+        height: 50dvh;
         position: relative;
     }
-    main .top-zone img{
-        width: 100%;
-        height: 20dvh;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 45px;
-        object-fit: cover;
+    
+    main .top img{
+        position: absolute;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 15px 50px rgba(0,0,0,0.1);
+    }
+    main .top .textbox{
+        width: 70dvw;
+    }
+    main .top .textbox h1{
+        font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        font-size: 10dvw;
+        color:#F5F5F5;
+        text-align: center;
+    }
+    main .top .textbox p{
+        font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        font-size: 5dvw;
+        color:#F5F5F5;
+        text-align: center;
     }
 
+    main .docs{
+        margin: 16px auto;
+        width: 90%;
+    }
+ 
     
     .dlw{
-        border-radius: 45px;
+        border-radius: 20px;
         width: 90%;
     }
 
     .dlw p{
         margin: 10px 0;
-        font-size: 48px;
+        font-size: 24px;
     }
 
     .dlbutton a{
         width: 50%;
-        height: 64px;
-        border-radius: 45px;
-        font-size: 38px;
+        height: 32px;
+        border-radius: 15px;
+        font-size: 16px;
     }
 }
